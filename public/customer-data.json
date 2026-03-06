@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Unable to login",
+        "description": "Customer cannot log into the account after password reset.",
+        "customer": "John Smith",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-01T10:15:00Z"
+    },
+    {
+        "id": 2,
+        "title": "Payment failed during checkout",
+        "description": "Customer reports that payment fails when using credit card.",
+        "customer": "Emma Johnson",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-01T12:40:00Z"
+    },
+    {
+        "id": 3,
+        "title": "Order not delivered",
+        "description": "Customer has not received the order even after delivery date.",
+        "customer": "Michael Brown",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "2026-03-02T08:20:00Z"
+    },
+    {
+        "id": 4,
+        "title": "Wrong item received",
+        "description": "Customer received a different product than what was ordered.",
+        "customer": "Sophia Davis",
+        "priority": "Medium",
+        "status": "In Progress",
+        "createdAt": "2026-03-02T11:05:00Z"
+    },
+    {
+        "id": 5,
+        "title": "Refund request",
+        "description": "Customer requested a refund due to damaged product.",
+        "customer": "William Wilson",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-02T15:30:00Z"
+    },
+    {
+        "id": 6,
+        "title": "App crashing on startup",
+        "description": "Customer reports that the mobile app crashes immediately after opening.",
+        "customer": "Olivia Martinez",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-03T09:10:00Z"
+    },
+    {
+        "id": 7,
+        "title": "Unable to update profile",
+        "description": "Customer cannot save changes in the profile settings page.",
+        "customer": "James Anderson",
+        "priority": "Low",
+        "status": "Open",
+        "createdAt": "2026-03-03T13:25:00Z"
+    },
+    {
+        "id": 8,
+        "title": "Discount code not working",
+        "description": "Customer tried to apply promo code but it shows invalid.",
+        "customer": "Isabella Thomas",
+        "priority": "Medium",
+        "status": "Resolved",
+        "createdAt": "2026-03-03T17:00:00Z"
+    },
+    {
+        "id": 9,
+        "title": "Email notifications not received",
+        "description": "Customer is not receiving order confirmation emails.",
+        "customer": "Benjamin Taylor",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "2026-03-04T07:45:00Z"
+    },
+    {
+        "id": 10,
+        "title": "Account locked",
+        "description": "Customer account locked after multiple login attempts.",
+        "customer": "Mia Moore",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-04T10:50:00Z"
+    },
+    {
+        "id": 11,
+        "title": "Shipping address change request",
+        "description": "Customer wants to change the shipping address after placing order.",
+        "customer": "Lucas Jackson",
+        "priority": "Low",
+        "status": "Open",
+        "createdAt": "2026-03-04T14:15:00Z"
+    },
+    {
+        "id": 12,
+        "title": "Product warranty inquiry",
+        "description": "Customer asking about warranty coverage for purchased item.",
+        "customer": "Charlotte White",
+        "priority": "Low",
+        "status": "Resolved",
+        "createdAt": "2026-03-05T09:05:00Z"
+    },
+    {
+        "id": 13,
+        "title": "Unable to upload documents",
+        "description": "Customer cannot upload verification documents.",
+        "customer": "Henry Harris",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "2026-03-05T11:40:00Z"
+    },
+    {
+        "id": 14,
+        "title": "Subscription cancellation request",
+        "description": "Customer wants to cancel the monthly subscription plan.",
+        "customer": "Amelia Martin",
+        "priority": "Medium",
+        "status": "In Progress",
+        "createdAt": "2026-03-05T15:55:00Z"
+    },
+    {
+        "id": 15,
+        "title": "Slow website performance",
+        "description": "Customer reports pages loading very slowly.",
+        "customer": "Daniel Thompson",
+        "priority": "Low",
+        "status": "Open",
+        "createdAt": "2026-03-06T08:30:00Z"
+    }
+]
