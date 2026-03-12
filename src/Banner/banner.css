@@ -1,0 +1,21 @@
+.counter-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.progress-container {
+    background:
+        url("../assets/vector1.png") left center no-repeat,
+        url("../assets/vector1.png") right center no-repeat,
+        linear-gradient(to right, #632EE3, #9F62F2);
+}
+
+.resolved-container {
+    background:
+        url("../assets/vector1.png") left center no-repeat,
+        url("../assets/vector1.png") right center no-repeat,
+        linear-gradient(to right, #54CF68, #00827A);
+}

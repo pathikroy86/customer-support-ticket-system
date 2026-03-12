@@ -23,7 +23,7 @@
         "description": "Customer has not received the order even after delivery date.",
         "customer": "Michael Brown",
         "priority": "Medium",
-        "status": "Open",
+        "status": "In Progress",
         "createdAt": "2026-03-02T08:20:00Z"
     },
     {
@@ -32,7 +32,7 @@
         "description": "Customer received a different product than what was ordered.",
         "customer": "Sophia Davis",
         "priority": "Medium",
-        "status": "In Progress",
+        "status": "Open",
         "createdAt": "2026-03-02T11:05:00Z"
     },
     {
@@ -59,7 +59,7 @@
         "description": "Customer cannot save changes in the profile settings page.",
         "customer": "James Anderson",
         "priority": "Low",
-        "status": "Open",
+        "status": "In Progress",
         "createdAt": "2026-03-03T13:25:00Z"
     },
     {
@@ -68,7 +68,7 @@
         "description": "Customer tried to apply promo code but it shows invalid.",
         "customer": "Isabella Thomas",
         "priority": "Medium",
-        "status": "Resolved",
+        "status": "In Progress",
         "createdAt": "2026-03-03T17:00:00Z"
     },
     {
@@ -104,7 +104,7 @@
         "description": "Customer asking about warranty coverage for purchased item.",
         "customer": "Charlotte White",
         "priority": "Low",
-        "status": "Resolved",
+        "status": "In Progress",
         "createdAt": "2026-03-05T09:05:00Z"
     },
     {
