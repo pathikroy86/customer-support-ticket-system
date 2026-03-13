@@ -1,16 +1,9 @@
-# React + Vite
+1 . JSX in full form javascript XML, is a syntex extension of javascript, which allows us to write HTML like codes directly into javascript code. It is oftenly used with libraries like react. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. State and props are both used in react librara, but there is a difference between them. States are managed internally into a component and handles dynamic data which changes over re-render every time, but props are used to pass data from parent to child. 
 
-Currently, two official plugins are available:
+3. The useState hook is a fundamental function in react which manages the state variables in every render. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. Every state has a variable and a function. Also we need a handler function to handle the state. We can pass a state accross components by pass the handler function or the variable of the state through props.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. We can write a event handler function in parent component and pass through props into the child component. That's how event handling done in React. 
