@@ -5,6 +5,7 @@ import Banner from './Banner/Banner'
 import Navbar from './Navbar/Navbar'
 import Tickets from './Tickets/Tickets';
 import TaskStatus from './TaskStatus/TaskStatus';
+import Resolved from './Resolved/Resolved';
 
 function App() {
 
@@ -18,6 +19,13 @@ function App() {
   const handleProgress = (ticket) => {
     const newArr = [ticket, ...progress];
     setProgress(newArr);
+  }
+
+  const [resolved, setResolved] = useState([]);
+  const handleResolved = (ticket) => {
+    const newArr = [...resolved, ticket];
+    console.log(newArr)
+    setResolved(newArr);
   }
   return (
     <>
@@ -35,7 +43,12 @@ function App() {
           </div>
           <div className='col-span-1'>
             <h1 className='text-[#34485A] text-2xl font-semibold mb-5'>Task Status</h1>
-            <TaskStatus progress={progress}></TaskStatus>
+            <TaskStatus
+              progress={progress}
+              handleResolved={handleResolved}
+            ></TaskStatus>
+            <h1 className='text-[#34485A] text-2xl font-semibold mb-5 mt-5'>Resolved Task</h1>
+            <Resolved resolved={resolved}></Resolved>
           </div>
         </div>
       </div>
