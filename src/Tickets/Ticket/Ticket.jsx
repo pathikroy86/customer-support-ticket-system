@@ -3,6 +3,7 @@ import React from 'react';
 const Ticket = ({ ticket, handleProgress }) => {
     const { id, title, description, customer, priority, status, createdAt } = ticket;
     const creationDate = createdAt.substring(0, 10);
+
     return (
         <div onClick={() => { handleProgress(ticket) }} className='space-y-2 p-2 shadow'>
             <div className='flex justify-between'>

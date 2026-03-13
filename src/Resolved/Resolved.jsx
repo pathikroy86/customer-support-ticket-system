@@ -4,7 +4,7 @@ const Resolved = ({ resolved }) => {
     return (
         <div className='space-y-3'>
             {resolved.length === 0 ? (
-                <p className='text-gray-500 text-sm'>Select a ticket to add to Task Status</p>
+                <p className='text-gray-500 text-sm'>No resolved tasks yet</p>
             ) : (
                 resolved.map((task) => {
                     const { id, title } = task;

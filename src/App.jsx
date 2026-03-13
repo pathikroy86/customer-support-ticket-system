@@ -6,6 +6,8 @@ import Navbar from './Navbar/Navbar'
 import Tickets from './Tickets/Tickets';
 import TaskStatus from './TaskStatus/TaskStatus';
 import Resolved from './Resolved/Resolved';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,25 +19,40 @@ function App() {
 
   const [progress, setProgress] = useState([]);
   const handleProgress = (ticket) => {
+    for (const index of progress) {
+      if (index.id === ticket.id) {
+        toast.warn(`Ticket "${ticket.title}" is already selected!`);
+        return;
+      }
+    }
     const newArr = [ticket, ...progress];
     setProgress(newArr);
+    toast.success(`Ticket "${ticket.title}" added to Task Status!`);
   }
 
   const [resolved, setResolved] = useState([]);
   const handleResolved = (ticket) => {
+    for (const index of resolved) {
+      if (index.id === ticket.id) {
+        toast.warn(`Ticket "${ticket.title}" is already resolved!`);
+        return;
+      }
+    }
     const newArr = [...resolved, ticket];
-    console.log(newArr)
     setResolved(newArr);
+    setProgress(progress.filter(card => card.id !== ticket.id));
+    toast.success(`Ticket "${ticket.title}" marked as resolved!`);
   }
+
   return (
     <>
       <Navbar></Navbar>
-      <Banner progress={progress}></Banner>
+      <Banner progress={progress} resolved={resolved}></Banner>
       <div className='w-11/12 mx-auto mt-10'>
-        <div className='grid grid-cols-3 gap-5'>
-          <div className='col-span-2'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
+          <div className='col-span-1 md:col-span-2'>
             <h1 className='text-[#34485A] text-2xl font-semibold mb-5'>Customer Tickets</h1>
-            <Suspense>
+            <Suspense fallback={<div>Data Loading ...</div>}>
               <Tickets customerPromise={customerPromise}
                 handleProgress={handleProgress}
               ></Tickets>
@@ -52,7 +69,7 @@ function App() {
           </div>
         </div>
       </div>
-
+      <ToastContainer />
     </>
   )
 }

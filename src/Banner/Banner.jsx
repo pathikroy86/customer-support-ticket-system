@@ -1,7 +1,7 @@
 import React from 'react';
 import './banner.css';
 
-const Banner = ({ progress }) => {
+const Banner = ({ progress, resolved }) => {
     return (
         <div className='counter-container'>
             <div className='progress-container flex flex-col justify-center items-center py-20 rounded'>
@@ -10,7 +10,7 @@ const Banner = ({ progress }) => {
             </div>
             <div className='resolved-container flex flex-col justify-center items-center py-20 rounded'>
                 <h4 className='text-2xl text-white'>Resolved</h4>
-                <h1 className='text-6xl font-semibold text-white'>0</h1>
+                <h1 className='text-6xl font-semibold text-white'>{resolved.length}</h1>
             </div>
         </div>
     );
